@@ -19,3 +19,4 @@ let cursor_x = 0
 lumaMatrix.initializeMatrix(127)
 cursor_x = 0
 cursor_y = 0
+lumaMatrix.setOnePixel(cursor_x, cursor_y, 0xffffff)
