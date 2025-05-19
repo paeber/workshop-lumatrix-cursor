@@ -12,8 +12,8 @@ lumaMatrix.joystickChangedThread(function (direction) {
     } else {
     	
     }
+    // Aktualisiere den Cursor nur dann, wenn eine Richtungsaktion ausgeführt wird
     if (!(lumaMatrix.compareJoystick(direction, lumaMatrix.eJoystickDirection.NotPressed))) {
-        // Aktualisiere den Cursor nur dann, wenn eine Richtungsaktion ausgeführt wird
         lumaMatrix.setOnePixel(cursor_x, cursor_y, 0xffffff)
     }
 })
